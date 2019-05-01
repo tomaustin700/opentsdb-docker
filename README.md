@@ -7,6 +7,13 @@ This image automatically starts HBase, waits a configurable number of  seconds, 
 attempts to create the opentsdb tables in hbase and then fires up opentsdb.  
 Make sure that you export port 4242 so that you can access opentsdb outside of the container.
 
+This image has the following parameters set in the opentsdb.conf file so BosunReporter can send data to it
+
+```
+tsd.http.request.enable_chunked=true
+tsd.http.request.max_chunk=33554432
+```
+
 ## Usage
 
 ### "I just want to play with opentsdb as soon as possible!"
