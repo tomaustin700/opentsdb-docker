@@ -17,7 +17,7 @@ tsd.http.request.max_chunk=33554432
 ## Usage
 
 ### "I just want to play with opentsdb as soon as possible!"
-`docker run -dp 4242:4242 petergrace/opentsdb-docker`
+`docker run -dp 4242:4242 tomaustin/opentsdb`
 
 ### "I want my data to persist even if the container is deleted!"
 Use the supplied docker-compose.yml file to start the container.  Data will be persisted in ./data
